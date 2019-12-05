@@ -1,0 +1,42 @@
+Produkt Backlog
+1	Startmenue 
+mit zwei Button:	- Einkaufsliste erstellen
+				- Navigation starten
+	erster Button anklickbar
+	zweiter Button ausgegraut
+	2B erst anklickbar sobald in 1B 2.5 OK-Button angeklickt wird
+2	Erster Button „Einkaufsliste erstellen“:
+
+2.1	 Supermarktauswahl
+Pflichteingabe vor 2.2 
+Auswahlmöglichkeiten von vorgegebenen Märkten
+Bestätigte Auswahl Ändert Auswahlmöglichkeiten in 2.2
+
+2.2	Einkaufsliste
+Mehrere Einträge möglich
+Startet mit 1. ____
+2. Reihe ausgegraut bis 1. Ausgefüllt, danach ausgegraute „3.“ Anzeigen
+Nach Auswahl: Produktname mit Preis in Euro anzeigen
+X-Funktion zum Löschen des Eintrags
+
+2.2.1	Manuelle Eingabe
+Texteingabe des Produkts, Schlagwortauswahl
+Übergibt Preis an 2.3 Fkt.
+2.2.2	Listenauswahl
+Öffnet neues Auswahlfenster mit Kategorien: „Obst“ „Gemüse“, etc.
+Klick öffnet neues Fenster mit Produkten zur Auswahl, durch drücken wird er der EKL hinzugefügt
+2.2.3	Angebote
+Liefert anhand der Supermarktauswahl die aktuellen Angebote des Marktes auf einer Liste runter, möglicherweise kategorisiert, anklicken zur EKL hinzugefügt
+
+2.3	Gesamtpreis
+Rechnet alle Einträge der EKL in Euro zusammen und zeigt den Gesamtbetrag an
+
+2.4	Backout Button
+X-Button um das Anlegen der EKL zu beenden ohne bereits angelegte Liste zu speichern
+
+2.5	OK-Button
+Schaltet in 1. Menü den „Zweiten Button : Navigation starten“ frei und speichert die EKL
+3	Zweiter Button „Navigation starten“:
+
+
+
