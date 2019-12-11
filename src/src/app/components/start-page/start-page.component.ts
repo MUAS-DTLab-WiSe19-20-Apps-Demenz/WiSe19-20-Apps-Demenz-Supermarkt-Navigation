@@ -6,6 +6,7 @@ import { Router } from '@angular/router';
   templateUrl: './start-page.component.html',
   styleUrls: ['./start-page.component.css']
 })
+
 export class StartPageComponent implements OnInit {
 
   constructor(private router: Router) { }
@@ -16,5 +17,13 @@ export class StartPageComponent implements OnInit {
   toShoppingList(): void 
   {
     this.router.navigate(["shoppingList"]);
+  }
+
+  public static updateNavigationButton(input: boolean): void
+  {
+    const test = document.getElementById("para1");
+    console.log(document);
+    console.log(test);
+//    test.removeAttribute("disabled");
   }
 }

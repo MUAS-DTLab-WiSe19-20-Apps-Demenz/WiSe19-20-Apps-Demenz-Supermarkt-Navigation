@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, SystemJsNgModuleLoader } from '@angular/core';
 import { Router } from '@angular/router';
+import { StartPageComponent } from '../start-page/start-page.component';
 
 @Component({
   selector: 'app-shopping-list',
@@ -29,7 +30,7 @@ export class ShoppingListComponent implements OnInit
   // Damit der "Navigation starten" Button klickbar wird.
   notifyStartPage(): void
   {
-
+    StartPageComponent.updateNavigationButton(false);
   }
   
 }
