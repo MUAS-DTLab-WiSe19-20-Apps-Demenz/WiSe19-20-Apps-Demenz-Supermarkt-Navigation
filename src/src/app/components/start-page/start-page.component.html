@@ -1,4 +1,4 @@
-<h1>Temporäre Startseite!</h1>
+<h1>SuperNavi</h1>
 
 <button (click) = "toShoppingList()">Zu Einkaufslistenmenü</button>
-<button id = "para1" (click) = "toShoppingList()" disabled>Navigation starten</button>
+<button (click) = "toShoppingList()" [disabled] = "buttonManagement.navigationButtonDisabled">Navigation starten</button>

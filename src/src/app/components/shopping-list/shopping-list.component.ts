@@ -1,6 +1,7 @@
 import { Component, OnInit, SystemJsNgModuleLoader } from '@angular/core';
 import { Router } from '@angular/router';
 import { StartPageComponent } from '../start-page/start-page.component';
+import { ButtonManagementService } from 'src/app/services/button-management.service';
 
 @Component({
   selector: 'app-shopping-list',
@@ -11,7 +12,7 @@ import { StartPageComponent } from '../start-page/start-page.component';
 export class ShoppingListComponent implements OnInit
 {
 
-  constructor(private router: Router)
+  constructor(private router: Router, private bM: ButtonManagementService)
   {
     
   }
@@ -23,14 +24,18 @@ export class ShoppingListComponent implements OnInit
 
   returnToStartPage(): void
   {
-    this.notifyStartPage();
+    this.router.navigate(["/"]);
+  }
+
+  returnToStartPageModified(): void
+  {
+    this.notifyButtonManagement();
     this.router.navigate(["/"]);
   }
 
   // Damit der "Navigation starten" Button klickbar wird.
-  notifyStartPage(): void
+  notifyButtonManagement(): void
   {
-    StartPageComponent.updateNavigationButton(false);
+    this.bM.navigationButtonDisabled = false;
   }
-  
 }
