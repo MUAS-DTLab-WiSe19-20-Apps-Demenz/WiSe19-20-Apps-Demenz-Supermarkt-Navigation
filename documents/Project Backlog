@@ -12,31 +12,43 @@ Pflichteingabe vor 2.2
 Auswahlmöglichkeiten von vorgegebenen Märkten
 Bestätigte Auswahl Ändert Auswahlmöglichkeiten in 2.2
 
-2.2	Einkaufsliste
+2.2 "Datenbank" von Produkten in Kategorien
+	externe Textdatei.
+	Name = "Kategorie"
+	Inhalt:		Produkt1,
+				Produkt2,
+				etc...
+
+2.3	Einkaufsliste
 Mehrere Einträge möglich
 Startet mit 1. ____
+			2. ____
 2. Reihe ausgegraut bis 1. Ausgefüllt, danach ausgegraute „3.“ Anzeigen
 Nach Auswahl: Produktname mit Preis in Euro anzeigen
 X-Funktion zum Löschen des Eintrags
+Bietet eine Schreibfläche2.3.1, eine Listenauswahl 2.3.2 und ein Angebote-Button 2.3.3 zum hinzugefügen, wahlweise eines davon!
 
-2.2.1	Manuelle Eingabe
-Texteingabe des Produkts, Schlagwortauswahl
-Übergibt Preis an 2.3 Fkt.
-2.2.2	Listenauswahl
+2.3.1	Manuelle Eingabe
+Texteingabe des Produkts, akzeptiert nur Produkte aus 2.2
+Übergibt Preis in € an 2.4 Fkt.
+2.3.2	Listenauswahl
 Öffnet neues Auswahlfenster mit Kategorien: „Obst“ „Gemüse“, etc.
 Klick öffnet neues Fenster mit Produkten zur Auswahl, durch drücken wird er der EKL hinzugefügt
-2.2.3	Angebote
+2.3.3	Angebote
 Liefert anhand der Supermarktauswahl die aktuellen Angebote des Marktes auf einer Liste runter, möglicherweise kategorisiert, anklicken zur EKL hinzugefügt
 
-2.3	Gesamtpreis
+2.4	Gesamtpreis
+Ganz unten im Fenster EKL
 Rechnet alle Einträge der EKL in Euro zusammen und zeigt den Gesamtbetrag an
+Gesamtpreis 	XX.XX€
 
-2.4	Backout Button
-X-Button um das Anlegen der EKL zu beenden ohne bereits angelegte Liste zu speichern
+2.5	Backout Button
+X-Button um das Anlegen der EKL zu beenden (ohne bereits angelegte Liste zu speichern)
 
-2.5	OK-Button
+2.6	OK-Button
 Schaltet in 1. Menü den „Zweiten Button : Navigation starten“ frei und speichert die EKL
+Vorraussetzung: Mindestens 1 Eintrag in EKL 2.3
 3	Zweiter Button „Navigation starten“:
-
+Öffnet neues Fenster, noch ohne Inhalt
 
 
