@@ -27,15 +27,11 @@ export class ShoppingListComponent implements OnInit
     this.router.navigate(["/"]);
   }
 
-  returnToStartPageModified(): void
+  changeNavigationButton(): void
   {
-    this.notifyButtonManagement();
-    this.router.navigate(["/"]);
-  }
-
-  // Damit der "Navigation starten" Button klickbar wird.
-  notifyButtonManagement(): void
-  {
+    // Damit der "Navigation starten" Button klickbar wird.
     this.bM.navigationButtonDisabled = false;
+
+    this.returnToStartPage();
   }
 }
