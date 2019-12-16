@@ -5,8 +5,10 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { StartPageComponent } from './components/start-page/start-page.component';
 import { ShoppingListComponent } from './components/shopping-list/shopping-list.component';
+import { NavigationComponent } from './components/navigation/navigation.component';
 
 const appRoutes: Routes = [
+  {path: 'Navigation', component: NavigationComponent},
   { path: 'shoppingList', component: ShoppingListComponent},
   { path: '', component: StartPageComponent } // Erste bzw. default-Seite
 ];
@@ -15,7 +17,8 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     StartPageComponent,
-    ShoppingListComponent
+    ShoppingListComponent,
+    NavigationComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes,
