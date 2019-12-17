@@ -27,6 +27,11 @@ export class ShoppingListComponent implements OnInit
     this.router.navigate(["/"]);
   }
 
+  toAngebote(): void
+  {
+    this.router.navigate(["Angebote"]);
+  }
+
   changeNavigationButton(): void
   {
     // Damit der "Navigation starten" Button klickbar wird.
@@ -34,4 +39,6 @@ export class ShoppingListComponent implements OnInit
 
     this.returnToStartPage();
   }
+
+  
 }
