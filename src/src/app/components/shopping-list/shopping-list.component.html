@@ -1,7 +1,23 @@
+<button name = "X-Button" (click) = "returnToStartPage()" style = "color:red">
+    <strong>X</strong>
+</button>
+
 <h1>Einkaufsliste</h1>
+
+<p>Produkteliste</p>
+
+<mat-form-field class = "product-field">
+    <mat-label>1. Produkt</mat-label>
+    <input matInput placeholder = "1. Gegenstand eingeben" value = "Bananen (Testwert)">
+</mat-form-field>
+
+<mat-form-field class = "product-field">
+    <mat-label>2. Produkt</mat-label>
+    <input matInput placeholder = "2. Gegenstand eingeben"  value = "Äpfel (Testwert)">
+</mat-form-field>
 
 <button (click) = "toAngebote()">Angebote</button>
 
-<button name = "X-Button" (click) = "returnToStartPage()" style = "color:red"><strong>X</strong></button>
 <button (click) = "changeNavigationButton()">
-    Ok (Bestätigen)</button>
+    Ok (Bestätigen)
+</button>

@@ -1,6 +1,5 @@
-import { Component, OnInit, SystemJsNgModuleLoader } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { StartPageComponent } from '../start-page/start-page.component';
 import { ButtonManagementService } from 'src/app/services/button-management.service';
 
 @Component({
@@ -8,7 +7,6 @@ import { ButtonManagementService } from 'src/app/services/button-management.serv
   templateUrl: './shopping-list.component.html',
   styleUrls: ['./shopping-list.component.css']
 })
-
 export class ShoppingListComponent implements OnInit
 {
 
