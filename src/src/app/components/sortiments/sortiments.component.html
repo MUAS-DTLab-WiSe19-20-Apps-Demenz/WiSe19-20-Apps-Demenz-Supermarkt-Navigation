@@ -1,0 +1,33 @@
+<button name = "X-Button" (click) = "returnToShopingList()" style = "color:red">
+    <strong>X</strong>
+</button>
+
+<h4>Sortiments</h4>
+<mat-form-field>
+  <mat-label>sortiments</mat-label>
+  <select matNativeControl>
+    <optgroup label="Obst">
+      <option value="Apfel">Apfel</option>
+      <option value="Birne">Birnen</option>
+    </optgroup>
+    <optgroup label="Gemüse">
+      <option value="paprika">paprika</option>
+      <option value="karotte">karotte</option>
+    </optgroup>
+    <optgroup label="Brot & Brötchen">
+        <option value="Bayerische Brezen">Bayerische Brezen</option>
+        <option value="Milchbrötchen">Milchbrötchen</option>
+      </optgroup>
+      <optgroup label="Kuchen">
+        <option value="Käse Törtchen">Käse Törtchen</option>
+        <option value=" Mini-Donuts, 9er "> Mini-Donuts, 9er </option>
+      </optgroup>
+      <optgroup label="Backshop">
+        <option value="Eiweißbrot">Eiweißbrot</option>
+        <option value="Buttercroissant">Buttercroissant</option>
+      </optgroup>
+  </select>
+</mat-form-field>
+<button (click) = "goBack()">
+    Ok (Bestätigen)
+</button>

@@ -29,6 +29,10 @@ export class ShoppingListComponent implements OnInit
   {
     this.router.navigate(["Angebote"]);
   }
+  toSortiments():void
+  {
+    this.router.navigate(["Sortiments"])
+  }
 
   changeNavigationButton(): void
   {
