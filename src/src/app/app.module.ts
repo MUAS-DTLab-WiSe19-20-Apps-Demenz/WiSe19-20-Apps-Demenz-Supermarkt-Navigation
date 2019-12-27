@@ -15,14 +15,14 @@ import { ShoppingListComponent } from './components/shopping-list/shopping-list.
 import { NavigationComponent } from './components/navigation/navigation.component';
 import { AngeboteComponent } from './components/angebote/angebote.component';
 import { SortimentsComponent } from './components/sortiments/sortiments.component';
+import { ProductComponent } from './components/product/product.component';
+
 const appRoutes: Routes = [
   { path: 'Navigation', component: NavigationComponent},
   { path: 'shoppingList', component: ShoppingListComponent},
   { path: '', component: StartPageComponent }, // Erste bzw. default-Seite
   { path:'Angebote', component: AngeboteComponent},
-  { path:'Sortiments', component: SortimentsComponent},
-  
-  
+  { path:'Sortiments', component: SortimentsComponent},  
 ];
 
 @NgModule({
@@ -32,7 +32,8 @@ const appRoutes: Routes = [
     ShoppingListComponent,
     NavigationComponent,
     AngeboteComponent,
-    SortimentsComponent
+    SortimentsComponent,
+    ProductComponent
   
   ],
   imports: [

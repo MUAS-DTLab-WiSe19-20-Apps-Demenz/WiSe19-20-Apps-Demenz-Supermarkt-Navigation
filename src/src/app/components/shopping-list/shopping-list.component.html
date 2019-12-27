@@ -1,24 +1,22 @@
-<button name = "X-Button" (click) = "returnToStartPage()" style = "color:red">
+<button class = "X-Button" (click) = "returnToStartPage()" style = "color:red">
     <strong>X</strong>
 </button>
 
 <h1>Einkaufsliste</h1>
 
-<p>Produkteliste</p>
+<h2>Produkteliste</h2>
 
-<mat-form-field class = "product-field">
-    <mat-label>1. Produkt</mat-label>
-    <input matInput placeholder = "1. Gegenstand eingeben" value = "Bananen (Testwert)">
-</mat-form-field>
+<div role = "product-list" fxLayout = "column">
+    <app-product *ngFor = "let product of listService.getProductList() | async" [productInstance] = "product"></app-product>
+</div>
 
-<mat-form-field class = "product-field">
-    <mat-label>2. Produkt</mat-label>
-    <input matInput placeholder = "2. Gegenstand eingeben"  value = "Äpfel (Testwert)">
-</mat-form-field>
-
+<div fxLayout = "row" class = "extra-buttons">
 <button (click) = "toAngebote()">Angebote</button>
 
-<button (click) = "changeNavigationButton()">
+<button (click)= "toSortiments()">Sortimente</button>
+</div>
+
+<button (click) = "changeNavigationButton()" [disabled] = "listService.isConfirmationButtonDisabled()">
     Ok (Bestätigen)
 </button>
-<button (click)= "toSortiments()">Sortimente</button >
+

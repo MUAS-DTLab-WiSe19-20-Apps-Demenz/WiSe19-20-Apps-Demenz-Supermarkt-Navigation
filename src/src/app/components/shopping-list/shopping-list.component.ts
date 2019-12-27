@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ButtonManagementService } from 'src/app/services/button-management.service';
+import { ShoppingListService } from 'src/app/services/shopping-list.service';
 
 @Component({
   selector: 'app-shopping-list',
@@ -10,7 +11,7 @@ import { ButtonManagementService } from 'src/app/services/button-management.serv
 export class ShoppingListComponent implements OnInit
 {
 
-  constructor(private router: Router, private bM: ButtonManagementService)
+  constructor(private router: Router, public bM: ButtonManagementService, private listService: ShoppingListService)
   {
     
   }

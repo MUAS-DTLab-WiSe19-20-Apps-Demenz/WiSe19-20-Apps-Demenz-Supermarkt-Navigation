@@ -1,0 +1,7 @@
+
+{{productInstance.getListNumber()}}.
+<mat-form-field class = "product-field">
+    <mat-label>{{productInstance.getListNumber()}}. Produkt</mat-label>
+    <input matInput [disabled] = "productInstance.isFieldDisabled()" placeholder = "{{productInstance.getListNumber()}}. Gegenstand eingeben"
+    (input) = "productInstance.adjustProduct($event.target.value)" value = "{{productInstance.getName()}}">
+</mat-form-field>
