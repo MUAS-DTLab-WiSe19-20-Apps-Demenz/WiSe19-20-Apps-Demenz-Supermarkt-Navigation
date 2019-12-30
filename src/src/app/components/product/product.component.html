@@ -1,7 +1,18 @@
-
+<div fxLayout = "row">
 {{productInstance.getListNumber()}}.
 <mat-form-field class = "product-field">
     <mat-label>{{productInstance.getListNumber()}}. Produkt</mat-label>
     <input matInput [disabled] = "productInstance.isFieldDisabled()" placeholder = "{{productInstance.getListNumber()}}. Gegenstand eingeben"
     (input) = "productInstance.adjustProduct($event.target.value)" value = "{{productInstance.getName()}}">
+    <mat-error *ngIf = "productInstance.getPrice() > 0">Bitte wählen Sie ein Produkt</mat-error>
 </mat-form-field>
+<mat-card class = "price-card" *ngIf = "productInstance.getPrice() >= 0">
+    <mat-card-title style = "font-size: medium;">Preis:</mat-card-title>
+    <mat-card-content>{{productInstance.getPrice()}} €</mat-card-content>
+</mat-card>
+
+<mat-card class = "price-card" *ngIf = "productInstance.getPrice() < 0">
+    <mat-card-title style = "font-size: medium;">Preis:</mat-card-title>
+    <mat-card-content>Kein Produkt gewählt</mat-card-content>
+</mat-card>
+</div>

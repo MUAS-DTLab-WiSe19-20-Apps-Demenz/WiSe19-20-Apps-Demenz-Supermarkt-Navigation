@@ -1,4 +1,4 @@
-<button class = "X-Button" (click) = "returnToStartPage()" style = "color:red">
+<button class = "X-Button" (click) = "disableNavigationButton()" style = "color:red">
     <strong>X</strong>
 </button>
 
@@ -16,7 +16,20 @@
 <button (click)= "toSortiments()">Sortimente</button>
 </div>
 
-<button (click) = "changeNavigationButton()" [disabled] = "listService.isConfirmationButtonDisabled()">
+<div class = "total-price">
+<mat-card class = "price-card" *ngIf = "listService.getTotalPrice() >= 0">
+    <mat-card-title style = "font-size: medium;">Gesamtpreis:</mat-card-title>
+    <mat-card-content>{{listService.getTotalPrice()}} €</mat-card-content>
+</mat-card>
+
+<mat-card class = "price-card" *ngIf = "listService.getTotalPrice() < 0">
+    <mat-card-title style = "font-size: medium;">Gesamtpreis:</mat-card-title>
+    <mat-card-content>Keine Produkte gewählt</mat-card-content>
+</mat-card>
+</div>
+
+<div class = "confirm-button">
+<button (click) = "enableNavigationButton()" style = "font-size: medium;" [disabled] = "listService.isConfirmationButtonDisabled()">
     Ok (Bestätigen)
 </button>
-
+</div>

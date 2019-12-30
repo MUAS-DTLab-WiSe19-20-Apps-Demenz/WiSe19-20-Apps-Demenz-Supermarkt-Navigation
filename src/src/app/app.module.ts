@@ -8,6 +8,7 @@ import { MatListModule } from "@angular/material/list";
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from "@angular/material/form-field";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatCardModule } from "@angular/material/card";
 
 import { AppComponent } from './app.component';
 import { StartPageComponent } from './components/start-page/start-page.component';
@@ -34,7 +35,6 @@ const appRoutes: Routes = [
     AngeboteComponent,
     SortimentsComponent,
     ProductComponent
-  
   ],
   imports: [
     RouterModule.forRoot(appRoutes,
@@ -47,7 +47,8 @@ const appRoutes: Routes = [
     MatNativeDateModule,
     MatInputModule,
     MatListModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatCardModule
     ],
   providers: [],
   bootstrap: [AppComponent]

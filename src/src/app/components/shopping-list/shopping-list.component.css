@@ -1,5 +1,19 @@
 .extra-buttons
 {
-    padding-bottom: 30px;
+    padding-bottom: 15px;
     padding-top: 5px;
+}
+
+.price-card
+{
+    max-width: 150px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.confirm-button
+{
+    padding-top: 50px;
 }

@@ -8,16 +8,19 @@ import { BehaviorSubject, Observable } from 'rxjs';
 export class ShoppingListService
 {
   private productList: BehaviorSubject<Product[]> = new BehaviorSubject<Product[]>([]);
+  private totalPrice: number;
 
   constructor()
   {
-    let product_1 = new Product("", this);
-    let product_2 = new Product("", this);
+    let product_1 = new Product("", -1, this);
+    let product_2 = new Product("", -1, this);
 
     product_1.setFieldIsDisabled(false);
 
     this.addProductToList(product_1);
     this.addProductToList(product_2);
+
+    this.totalPrice = -1;
   }
 
   public getProductList(): Observable<Product[]>
@@ -42,7 +45,7 @@ export class ShoppingListService
 
     if (otherProduct.isFieldDisabled())
     {
-    let newProduct = new Product("", this);
+    let newProduct = new Product("", -1, this);
     this.addProductToList(newProduct);
 
     otherProduct.setFieldIsDisabled(false);
@@ -69,15 +72,54 @@ export class ShoppingListService
 
   public isConfirmationButtonDisabled(): boolean
   {
-    let isDisabled: boolean = false;
+    return this.totalPrice < 0;
+  }
 
-    let firstField = this.productList.getValue()[0];
+  public calculateTotalPrice()
+  {
+    this.totalPrice = -1;
+    let additionCounter = 0;
 
-    if (firstField.getName() === "")
+    for (let listIndex = 0; listIndex < this.productList.getValue().length; listIndex++)
     {
-      isDisabled = true;
+      let priceOfProduct = this.productList.getValue()[listIndex].getPrice();
+
+      if (priceOfProduct >= 0)
+      {
+        this.totalPrice += priceOfProduct;
+        additionCounter++;
+      }
     }
 
-    return isDisabled;
+    if (additionCounter > 0)
+    {
+      this.totalPrice++;
+    }
+
+      /* Versuch aufgegeben, wird hier aber noch verweilen.
+      
+      let firstProduct = this.productList.getValue()[0];
+      let secondProduct = this.productList.getValue()[1];
+
+      // To-Do: Besseres Kriterium für leere Liste überlegen.
+      if (firstProduct.getPrice() < 0 && (secondProduct.isFieldDisabled() == true || secondProduct.getPrice() < 0))
+      {
+        this.totalPrice = -1;
+      }
+      else
+      {
+        if (this.totalPrice < 0)
+        {
+          this.totalPrice++;
+        }
+
+        this.totalPrice -= oldPrice;
+        this.totalPrice += newPrice;
+      } */
+  }
+
+  public getTotalPrice(): number
+  {
+    return this.totalPrice;
   }
 }
