@@ -1,3 +1,51 @@
-<h1>Angebote</h1>
+
+<header>
+
+    <button name = "X-Button" (click) = "backToShoppingList()" 
+        style = "color:red"><strong>X</strong>
+    </button>
+
+    <h1 style = "color:deepskyblue">Angebote</h1>
+
+</header>
 
 
+<form>
+
+    <mat-form-field>
+        <mat-label>Wählen Sie aus den Angeboten!</mat-label>
+            <select matNativeControl>
+    
+                <optgroup label = "Gemüse">
+                    <option value="Spinat">Spinat</option>
+                    <option value="Brokkoli">Brokkoli</option>
+                    <option value="Lauch">Lauch</option>
+                </optgroup>
+    
+                <optgroup label = "Obst">
+                    <option label="Äpfel">Äpfel</option>
+                    <option label="Birnen">Birnen</option>
+                    <option label="Mandarinen">Mandarinen</option>
+                </optgroup>
+    
+                <optgroup label = "Milch und Milchprodukte">
+                    <option label="Milch">Milch</option>
+                    <option label="Käse">Käse</option>
+                    <option label="Frischkäse">Frischkäse</option>
+                </optgroup>
+    
+                <optgroup label = "Fisch und Fleisch">
+                    <option label="Putensteaks">Putensteaks</option>
+                    <option label="Rinderschnitzel">Rinderschnitzel</option>
+                    <option label="Lachs">Lachs</option>
+                </optgroup>
+                
+            </select>
+    
+    </mat-form-field>
+
+<p>
+
+<button (click) = "backToShoppingList()">(Ok) Bestätigen</button>
+
+</p>
