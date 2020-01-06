@@ -19,6 +19,7 @@ export class AngeboteComponent implements OnInit {
 
   backToShoppingList(): void
   {
+    
     this.router.navigate(["shoppingList"]);
   }
 
