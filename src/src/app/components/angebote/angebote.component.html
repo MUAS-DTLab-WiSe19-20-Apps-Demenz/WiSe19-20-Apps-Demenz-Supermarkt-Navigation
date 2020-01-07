@@ -14,9 +14,8 @@
    
     <mat-form-field>
         <mat-label>Wählen Sie aus den Angeboten!</mat-label> 
-        <!-- Mit Strg kann man Mehrere auswählen (multiple) -->
         <div class = "deals-select">
-            <select id = "deals" matNativeControl multiple>
+            <select id = "deals" matNativeControl >
                 <optgroup>
                     <option>---</option>
                 </optgroup>
@@ -49,6 +48,15 @@
          </div>
     </mat-form-field>
 
+    <style>
+
+        span { margin-left: 5em; }
+  
+    </style>
+
+    
+        <span><button class = "add" (click) = "addToShoppingList()">+</button></span>
+    
 
 <p>
 
