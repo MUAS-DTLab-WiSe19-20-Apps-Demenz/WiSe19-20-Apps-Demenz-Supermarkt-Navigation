@@ -1,18 +1,20 @@
-<div fxLayout = "row">
+<form fxLayout = "row">
 {{productInstance.getListNumber()}}.
 <mat-form-field class = "product-field">
     <mat-label>{{productInstance.getListNumber()}}. Produkt</mat-label>
-    <input matInput [disabled] = "productInstance.isFieldDisabled()" placeholder = "{{productInstance.getListNumber()}}. Gegenstand eingeben"
-    (input) = "productInstance.adjustProduct($event.target.value)" value = "{{productInstance.getName()}}">
-    <mat-error *ngIf = "productInstance.getPrice() > 0">Bitte wählen Sie ein Produkt</mat-error>
+    <input ngModel name = "input-field" type = "text" matInput [disabled] = "productInstance.isFieldDisabled()" placeholder = "{{productInstance.getListNumber()}}. Gegenstand eingeben"
+    (input) = "productInstance.adjustProduct($event.target.value, -1)" value = "{{productInstance.getName()}}" [matAutocomplete] = "autoCompletion">
 </mat-form-field>
-<mat-card class = "price-card" *ngIf = "productInstance.getPrice() >= 0">
+
+<mat-card class = "price-card">
     <mat-card-title style = "font-size: medium;">Preis:</mat-card-title>
-    <mat-card-content>{{productInstance.getPrice()}} €</mat-card-content>
+    <mat-card-content *ngIf = "productInstance.getPrice() >= 0">{{productInstance.getPrice()}} €</mat-card-content>
+    <mat-card-content *ngIf = "productInstance.getPrice() < 0">Kein Produkt gewählt</mat-card-content>
 </mat-card>
 
-<mat-card class = "price-card" *ngIf = "productInstance.getPrice() < 0">
-    <mat-card-title style = "font-size: medium;">Preis:</mat-card-title>
-    <mat-card-content>Kein Produkt gewählt</mat-card-content>
-</mat-card>
-</div>
+<mat-autocomplete #autoCompletion = "matAutocomplete" autoActiveFirstOption (optionSelected) = "productInstance.adjustProduct($event.option.value, -1)">
+    <mat-option *ngFor = "let option of listService.getProductOptions()" [value] = "option">
+        {{option}}
+    </mat-option>
+</mat-autocomplete>
+</form>

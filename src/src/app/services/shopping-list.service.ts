@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Product } from '../classes/product';
 import { BehaviorSubject, Observable } from 'rxjs';
+import { ShopElements } from '../enums/shop-elements.enum';
 
 @Injectable({
   providedIn: 'root'
@@ -10,10 +11,14 @@ export class ShoppingListService
   private productList: BehaviorSubject<Product[]> = new BehaviorSubject<Product[]>([]);
   private totalPrice: number;
 
+  private productOptions: string[];
+
   constructor()
   {
     let product_1 = new Product("", -1, this);
     let product_2 = new Product("", -1, this);
+
+    this.productOptions = this.getProductNames();
 
     product_1.setFieldIsDisabled(false);
 
@@ -35,6 +40,13 @@ export class ShoppingListService
     currentArray.push(productToAdd);
 
     this.productList.next(currentArray);
+  }
+
+  public addGivenProduct(name: string, price: number)
+  {
+    const penultimateField: Product = this.productList.value[this.productList.value.length - 2];
+
+    penultimateField.adjustProduct(name, price);
   }
 
   public adjustList(changedProduct: Product)
@@ -95,31 +107,50 @@ export class ShoppingListService
     {
       this.totalPrice++;
     }
+  }
 
-      /* Versuch aufgegeben, wird hier aber noch verweilen.
-      
-      let firstProduct = this.productList.getValue()[0];
-      let secondProduct = this.productList.getValue()[1];
+  private getProductNames(): string[]
+  {
+    let allElements = Object.keys(ShopElements).filter(key => !isNaN(Number(ShopElements[key])));
+    let actualProducts: string[] = [];
 
-      // To-Do: Besseres Kriterium für leere Liste überlegen.
-      if (firstProduct.getPrice() < 0 && (secondProduct.isFieldDisabled() == true || secondProduct.getPrice() < 0))
-      {
-        this.totalPrice = -1;
-      }
-      else
-      {
-        if (this.totalPrice < 0)
-        {
-          this.totalPrice++;
-        }
+    for (let arrayIndex = 0; arrayIndex < allElements.length; arrayIndex++)
+    {
+       const key = allElements[arrayIndex];
+       
+       if (!this.isNotAProductName(key.toString()))
+       {
+          actualProducts.push(key.toString());
+       }
+    }
 
-        this.totalPrice -= oldPrice;
-        this.totalPrice += newPrice;
-      } */
+    return actualProducts;
+  }
+
+  public isNotAProductName(input: string): boolean
+  {
+    let result: boolean = false;
+
+    if (input === ShopElements[ShopElements.Path] ||
+        input === ShopElements[ShopElements.Wall] ||
+        input === ShopElements[ShopElements.Shelf] ||
+        input === ShopElements[ShopElements.Entrance] ||
+        input === ShopElements[ShopElements.Checkout])
+    {
+
+      result = true;
+    }
+
+    return result;
   }
 
   public getTotalPrice(): number
   {
-    return this.totalPrice;
+    return Number(this.totalPrice.toPrecision(5));
+  }
+
+  public getProductOptions(): string[]
+  {
+    return this.productOptions;
   }
 }

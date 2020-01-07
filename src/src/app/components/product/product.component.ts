@@ -7,13 +7,14 @@ import { ShoppingListService } from 'src/app/services/shopping-list.service';
   templateUrl: './product.component.html',
   styleUrls: ['./product.component.css']
 })
-export class ProductComponent implements OnInit {
-
+export class ProductComponent implements OnInit
+{
   @Input()
   public productInstance: Product;
-
+  
   constructor(private listService: ShoppingListService) { }
 
   ngOnInit() {
+
   }
 }

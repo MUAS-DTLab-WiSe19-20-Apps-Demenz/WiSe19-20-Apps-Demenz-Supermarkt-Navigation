@@ -1,4 +1,5 @@
 import { ShoppingListService } from '../services/shopping-list.service';
+import { ShopElements } from '../enums/shop-elements.enum';
 
 export class Product
 {
@@ -21,11 +22,20 @@ export class Product
         this.listNumber = Product.listCounter;
     }
 
-    public adjustProduct(nameInput: string)
+    public adjustProduct(nameInput: string, givenPrice: number)
     {
+        console.log(nameInput);
         this.name = nameInput;
         let oldPrice = this.getPrice();
-        this.price = this.findPrice();
+
+        if (givenPrice < 0)
+        {
+            this.price = this.findPrice();
+        }
+        else
+        {
+            this.price = givenPrice;
+        }
 
         if (this.price !== oldPrice)
         {
@@ -44,21 +54,11 @@ export class Product
 
     private findPrice(): number
     {
-        let amount = -1;
+        let amount: number = ShopElements[this.name];
 
-        if (this.name === "Bananen")
+        if (amount == null || this.listService.isNotAProductName(this.name))
         {
-            amount = 5;
-        }
-
-        if (this.name === "Äpfel")
-        {
-            amount = 10;
-        }
-
-        if (this.name === "Brot")
-        {
-            amount = 8;
+            amount = -1;
         }
 
         return amount;

@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ButtonManagementService } from 'src/app/services/button-management.service';
 import { NavigationService } from 'src/app/services/navigation.service';
-import { ShopElements } from 'src/app/enums/shop-elements.enum';
 
 @Component({
   selector: 'app-start-page',
@@ -19,7 +18,6 @@ export class StartPageComponent implements OnInit
 
   toShoppingList(): void 
   {
-    console.log(this.navigationService.findCoordinates(ShopElements.Entrance));
     this.router.navigate(["shoppingList"]);
   }
 
@@ -27,6 +25,7 @@ export class StartPageComponent implements OnInit
   toNavigation(): void 
   {
     this.router.navigate(["Navigation"]);
+    this.navigationService.startNavigation();
   }
 
 }
