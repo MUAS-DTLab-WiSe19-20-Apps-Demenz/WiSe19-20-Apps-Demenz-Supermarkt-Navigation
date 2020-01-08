@@ -1,8 +1,8 @@
-<form fxLayout = "row">
+<div fxLayout = "row">
 {{productInstance.getListNumber()}}.
 <mat-form-field class = "product-field">
     <mat-label>{{productInstance.getListNumber()}}. Produkt</mat-label>
-    <input ngModel name = "input-field" type = "text" matInput [disabled] = "productInstance.isFieldDisabled()" placeholder = "{{productInstance.getListNumber()}}. Gegenstand eingeben"
+    <input matInput [disabled] = "productInstance.isFieldDisabled()" placeholder = "{{productInstance.getListNumber()}}. Gegenstand eingeben"
     (input) = "productInstance.adjustProduct($event.target.value, -1)" value = "{{productInstance.getName()}}" [matAutocomplete] = "autoCompletion">
 </mat-form-field>
 
@@ -17,4 +17,4 @@
         {{option}}
     </mat-option>
 </mat-autocomplete>
-</form>
+</div>

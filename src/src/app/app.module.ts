@@ -18,13 +18,15 @@ import { NavigationComponent } from './components/navigation/navigation.componen
 import { AngeboteComponent } from './components/angebote/angebote.component';
 import { SortimentsComponent } from './components/sortiments/sortiments.component';
 import { ProductComponent } from './components/product/product.component';
+import { ShopNavigationComponent } from './components/shop-navigation/shop-navigation.component';
 
 const appRoutes: Routes = [
   { path: 'Navigation', component: NavigationComponent},
   { path: 'shoppingList', component: ShoppingListComponent},
   { path: '', component: StartPageComponent }, // Erste bzw. default-Seite
-  { path:'Angebote', component: AngeboteComponent},
-  { path:'Sortiments', component: SortimentsComponent},  
+  { path: 'Angebote', component: AngeboteComponent},
+  { path: 'Sortiments', component: SortimentsComponent},  
+  { path: 'shopNavigation', component: ShopNavigationComponent}
 ];
 
 @NgModule({
@@ -35,7 +37,8 @@ const appRoutes: Routes = [
     NavigationComponent,
     AngeboteComponent,
     SortimentsComponent,
-    ProductComponent
+    ProductComponent,
+    ShopNavigationComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes,

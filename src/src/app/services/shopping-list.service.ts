@@ -33,6 +33,11 @@ export class ShoppingListService
     return this.productList.asObservable();
   }
 
+  public getNormalProductList(): Product[]
+  {
+    return this.productList.value;
+  }
+
   private addProductToList(productToAdd: Product)
   {
     let currentArray = this.productList.getValue();

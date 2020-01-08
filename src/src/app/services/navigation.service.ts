@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { ShopElements } from '../enums/shop-elements.enum';
 import { ShoppingListService } from './shopping-list.service';
+import { Product } from '../classes/product';
 
 @Injectable({
   providedIn: 'root'
@@ -34,6 +35,8 @@ export class NavigationService
   private xBorder: number;
   private yBorder: number;
 
+  private currentProduct: Product;
+
   constructor(private listService: ShoppingListService)
   {
     this.currentPosition = this.findCoordinates(this.e);
@@ -42,15 +45,21 @@ export class NavigationService
     this.yBorder = this.navigationMap.length;
   }
 
-  public startNavigation()
+  public startNavigation(): void
   {
-    this.AStar_Algorithm(this.currentPosition, [10, 1]);
-    this.currentPosition = [10, 1];
+    this.currentProduct = this.listService.getNormalProductList()[0];
+    let productName: string = this.currentProduct.getName();
+  }
 
-    this.AStar_Algorithm(this.currentPosition, [7, 9]);
-    this.currentPosition = [7, 9];
+  public continueNavigation(): void
+  {
+    let currentListNumber = this.currentProduct.getListNumber();
+    const productList = this.listService.getNormalProductList();
 
-    this.AStar_Algorithm(this.currentPosition, [3, 3]);
+    if (currentListNumber + 2 != productList.length)
+    {
+      this.currentProduct = productList[currentListNumber];
+    }
   }
 
   private findCoordinates(field: ShopElements): [number, number]
@@ -202,6 +211,7 @@ export class NavigationService
       if (currentField[0] == destinationCoordinates[0] && currentField[1] == destinationCoordinates[1])
       {
         destinationReached = true;
+        this.currentPosition = destinationCoordinates;
       }
     }
     
@@ -256,5 +266,10 @@ export class NavigationService
     correctPath = correctPath.reverse();
 
     return correctPath;
+  }
+
+  public getCurrentProduct(): Product
+  {
+    return this.currentProduct;
   }
 }

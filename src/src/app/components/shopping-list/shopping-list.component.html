@@ -10,7 +10,7 @@
     <app-product *ngFor = "let product of listService.getProductList() | async" [productInstance] = "product"></app-product>
 </div>
 
-<div  class = "extra-buttons">
+<div class = "extra-buttons">
 <button (click) = "toAngebote()">Angebote</button>
 
 <button (click)= "toSortiments()">Sortimente</button>

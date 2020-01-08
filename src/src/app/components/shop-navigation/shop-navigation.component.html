@@ -1,0 +1,9 @@
+<button class = "X-Button" (click) = "returnToStartPage()" style = "color:red">
+    <strong>X</strong>
+</button>
+
+<h1>Navigation zu Produkt {{this.navigationService.getCurrentProduct().getListNumber()}} ({{this.navigationService.getCurrentProduct().getName()}})</h1>
+
+<p>Textuelle Navigationsanzeige: [To be done]</p>
+
+<button class = "continue" (click) = "continueNavigation()">Nächstes Produkt</button>

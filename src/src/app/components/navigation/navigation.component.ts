@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ButtonManagementService } from 'src/app/services/button-management.service';
+import { NavigationService } from 'src/app/services/navigation.service';
 
 @Component({
   selector: 'app-navigation',
@@ -9,7 +10,7 @@ import { ButtonManagementService } from 'src/app/services/button-management.serv
 })
 export class NavigationComponent implements OnInit {
 
-  constructor(private router: Router, private bM: ButtonManagementService)
+  constructor(private router: Router, private bM: ButtonManagementService, private navigationService: NavigationService)
   {
     
   }
@@ -24,10 +25,12 @@ export class NavigationComponent implements OnInit {
 
   changeNavigationButton(): void
   {
-    // Damit der "Navigation starten" Button klickbar wird.
-    this.bM.navigationButtonDisabled = false;
-
     this.returnToStartPage();
   }
 
+  private startNavigation(): void
+  {
+    this.navigationService.startNavigation();
+    this.router.navigate(["shopNavigation"]);
+  }
 }

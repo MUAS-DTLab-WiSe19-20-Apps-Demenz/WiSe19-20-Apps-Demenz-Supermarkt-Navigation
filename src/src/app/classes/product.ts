@@ -24,7 +24,6 @@ export class Product
 
     public adjustProduct(nameInput: string, givenPrice: number)
     {
-        console.log(nameInput);
         this.name = nameInput;
         let oldPrice = this.getPrice();
 

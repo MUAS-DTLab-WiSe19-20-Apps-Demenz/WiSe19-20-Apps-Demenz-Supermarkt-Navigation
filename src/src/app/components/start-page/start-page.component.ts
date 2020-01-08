@@ -20,12 +20,10 @@ export class StartPageComponent implements OnInit
   {
     this.router.navigate(["shoppingList"]);
   }
-
   
   toNavigation(): void 
   {
     this.router.navigate(["Navigation"]);
     this.navigationService.startNavigation();
   }
-
 }
