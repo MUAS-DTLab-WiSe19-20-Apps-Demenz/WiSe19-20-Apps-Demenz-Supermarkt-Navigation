@@ -4,7 +4,25 @@
 
 <h1>Einkaufsliste</h1>
 
-<h2>Produkteliste</h2>
+
+
+<h4>Supermarktauswahl </h4>
+<mat-form-field class="demo-full-width">
+  <mat-label>Wählen sie einen Markt aus</mat-label>
+  <select matNativeControl ="nativeSelectFormControl" [errorStateMatcher]="matcher">
+    <option value=""></option>
+    <option value="valid" selected>ALDI</option>
+    <option value="invalid">LIDL</option>
+  </select>
+  <mat-error *ngIf="nativeSelectFormControl.hasError('required')">You must make a selection</mat-error>
+  <mat-error *ngIf="nativeSelectFormControl.hasError('pattern') && !nativeSelectFormControl.hasError('required')">
+    Markt derzeit nicht verfügbar
+  </mat-error>
+</mat-form-field>
+
+
+
+<h2>Produktliste</h2>
 
 <div role = "product-list" fxLayout = "column">
     <app-product *ngFor = "let product of listService.getProductList() | async" [productInstance] = "product"></app-product>
