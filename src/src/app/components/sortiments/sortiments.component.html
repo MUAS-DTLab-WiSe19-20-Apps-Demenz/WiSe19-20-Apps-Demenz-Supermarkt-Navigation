@@ -1,33 +1,26 @@
-<button name = "X-Button" (click) = "returnToShopingList()" style = "color:red">
+<header>
+  <button class = "X-Button" (click) = "goBack()" style = "color:red">
     <strong>X</strong>
 </button>
 
-<h4>Sortiments</h4>
+<h1 style="color: blue;">Sortimente</h1>
+</header>
+
 <mat-form-field>
-  <mat-label>sortiments</mat-label>
-  <select matNativeControl>
-    <optgroup label="Obst">
-      <option value="Äpfel">Apfel</option>
-      <option value="Bananen">Bananen</option>
-    </optgroup>
-    <optgroup label="Gemüse">
-      <option value="paprika">paprika</option>
-      <option value="karotte">karotte</option>
-    </optgroup>
-    <optgroup label="Brot & Brötchen">
-        <option value="Brezen">Brezen</option>
-        <option value="Milchbrötchen">Milchbrötchen</option>
-      </optgroup>
-      <optgroup label="Kuchen">
-        <option value="Törtchen">Törtchen</option>
-        <option value="Donuts "> Donuts </option>
-      </optgroup>
-      <optgroup label="Backshop">
-        <option value="Eiweißbrot">Eiweißbrot</option>
-        <option value="Buttercroissant">Buttercroissant</option>
-      </optgroup>
-  </select>
+  <mat-label>Sortimente</mat-label>
+  <mat-select [(value)] = "selected">
+    <mat-option >-- None --</mat-option>
+    <mat-optgroup class="sorts" *ngFor="let product of products" [label]="product.sort">
+      <mat-option class="items" *ngFor="let item of product.item"[value] = "item.name" >
+        {{item.name}}: {{item.price}}{{'€'}}
+      </mat-option>
+
+    </mat-optgroup>
+  </mat-select>
 </mat-form-field>
-<button (click) = "goBack()">
+
+<p>
+<button class="Ok" (click) = "returnToShoppingList(selected)">
     Ok (Bestätigen)
 </button>
+</p>
