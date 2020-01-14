@@ -54,7 +54,10 @@ Preisnachlass erstellt, um einen übersichtlicheren Überblick der Angebote zu v
 
 
 
-
+<br>
+<br>
+<br>
+<br>
 
 
 <img align="left" src="/src/src/assets/EKLfertig.png">
@@ -64,22 +67,12 @@ Dabei wird nach jeder Auswahl eine weitere Auswahlmöglichkeit ergänzt, sodass 
 vermieden werden. Die einzelnen Preise der in den Warenkorb gelegten Produkte werden angezeigt und 
 der Gesamtpreis der Einkaufsliste wird berechnet.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 
 <img align="right" src="/src/src/assets/NAvStart.png"> <img align="right" src="/src/src/assets/Navigation.png"> <img align="right" src="/src/src/assets/NavFertig.png">
