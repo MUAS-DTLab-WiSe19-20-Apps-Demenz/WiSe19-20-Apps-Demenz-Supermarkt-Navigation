@@ -13,53 +13,29 @@
 <form>
    
     <mat-form-field>
-        <mat-label>Wählen Sie aus den Angeboten!</mat-label> 
+        <mat-label>Angebote</mat-label> 
         <div class = "deals-select">
-            <select id = "deals" matNativeControl >
-                <optgroup>
-                    <option>---</option>
-                </optgroup>
-    
-                <optgroup label = "Gemüse">
-                    <option label="Spinat € 0,89">Spinat</option>
-                    <option label="Brokkoli € 0,99">Brokkoli</option>
-                    <option label="Lauch € 0,69">Lauch</option>
-                </optgroup>
-    
-                <optgroup label = "Obst">
-                    <option label="Äpfel € 1,55">Äpfel</option>
-                    <option label="Birnen € 1,89">Birnen</option>
-                    <option label="Mandarinen € 1,29">Mandarinen</option>
-                </optgroup>
-    
-                <optgroup label = "Milch und Milchprodukte">
-                    <option label="Milch € 0,90">Milch</option>
-                    <option label="Käse € 0,80">Käse</option>
-                    <option label="Frischkäse € 0,78">Frischkäse</option>
-                </optgroup>
-    
-                <optgroup label = "Fisch und Fleisch">
-                    <option label="Putensteaks € 4,99">Putensteaks</option>
-                    <option label="Rinderschnitzel € 4,75">Rinderschnitzel</option>
-                    <option label="Lachs € 6,99">Lachs</option>
-                </optgroup>
-            </select>
+            <mat-select [(value)] = "selected" >
+                <mat-optgroup>
+                    <mat-option>---</mat-option>
+                </mat-optgroup>
+                <mat-optgroup class="sorts" *ngFor="let product of products" [label]="product.sort">
+                    <mat-option class="items" *ngFor="let item of product.item"[value] = "item.name" >
+                        
+                        {{item.name}}: {{item.price}}{{'€'}}
+
+                    </mat-option>
+
+                </mat-optgroup>
+   
+            </mat-select>
        
          </div>
     </mat-form-field>
 
-    <style>
+   
+</form>
+   
+<button class = "add" (click) = "addProduct(selected)"> Hinzufügen und Bestätigen!</button>
 
-        span { margin-left: 5em; }
-  
-    </style>
 
-    
-        <span><button class = "add" (click) = "addToShoppingList()">+</button></span>
-    
-
-<p>
-
-<button class = "Ok" (click) = "backToShoppingList()">(Ok) Bestätigen</button>
-
-</p>
