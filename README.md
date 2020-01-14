@@ -51,15 +51,15 @@ Alzheimererkrankten zu vereinfachen.
 
 **Dokumente**
 
-|Links        |Beschreibung                  |
-|-------------|:-----------------------------|
-|PressRelease |PressRelease SuperNavi Stand: |
-|-------------+------------------------------|
+|Links        |Beschreibung                            |
+|-------------|:---------------------------------------|
+|PressRelease |PressRelease SuperNavi Stand:           |
+|-------------+----------------------------------------|
 |FAQ          | Fragen und Antworten unseres SuperNavi |
-|-------------+------------------------------|
-|Storyboard| Grundkonzept und Wireframes     |
-|-------------+-------------|
-|UserStorys| UserStorys generiert Basis des SuperNavi|
+|-------------+----------------------------------------|
+|Storyboard   | Grundkonzept und Wireframes            |
+|-------------+----------------------------------------|
+|UserStorys   |UserStorys generiert Basis des SuperNavi|
 {: .custom-class #custom-id}
 
 -----
