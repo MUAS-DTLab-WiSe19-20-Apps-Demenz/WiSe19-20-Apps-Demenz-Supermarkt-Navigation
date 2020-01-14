@@ -47,6 +47,11 @@ Im Allgemeinen wurde auf eine schlichte und einfache Gestaltung des SuperNavi ge
 Alzheimer Patient ohne jegliche Probleme die Anwendung bedienen kann.
 
 <img align="right" src="/src/src/assets/Angebote.png">
+<br>
+<br>
+<br>
+<br>
+
 
 Zunächst wählt der Kunde seine gewünschten Produkte aus der Auswahl- oder Sortimentenliste aus und  
 fügt diese in die Einkaufsliste ein. Zusätzlich wurde eine separate Liste von Produkten mit 
