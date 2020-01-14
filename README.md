@@ -115,6 +115,9 @@ Alzheimererkrankten zu vereinfachen.
 TEAM:
 
 Robert Rudolf   -       **Product Owner**
+
 Fatma Oezar     -       **SCRUM Master**
+
 Andreas Kienle  -       **Entwicklerteam**
+
 Yussuf Muktar   -       **Entwicklerteam**
