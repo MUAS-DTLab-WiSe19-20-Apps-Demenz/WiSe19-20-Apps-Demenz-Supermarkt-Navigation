@@ -25,7 +25,13 @@ export class AngeboteComponent implements OnInit {
 
   addProduct(product:string): void
   {
-    this.listService.addGivenProduct(product, this.getDealsPrice(product));
+    const priceOfProduct = this.getDealsPrice(product);
+
+    if (priceOfProduct >= 0)
+    {
+      this.listService.addGivenProduct(product, priceOfProduct);
+    }
+    
     this.router.navigate(["shoppingList"]);
   }
 
@@ -84,7 +90,7 @@ export class AngeboteComponent implements OnInit {
       return 0.29;
     }
     default:
-      return 0;
+      return -1;
    }
   }
 }  

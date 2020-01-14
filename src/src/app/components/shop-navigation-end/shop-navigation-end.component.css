@@ -1,0 +1,11 @@
+.button
+{
+    width: 400px; 
+    height: 50px; 
+    border: 1px solid black;
+    border-radius: 5px; 
+    background: #eee; 
+    background-image: linear-gradient(orange, orange); 
+    color: black;
+    font-size: medium;
+}

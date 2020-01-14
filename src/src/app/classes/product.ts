@@ -63,6 +63,11 @@ export class Product
         return amount;
     }
 
+    public static resetListCounter(): void
+    {
+        this.listCounter = 0;
+    }
+
     public getName(): string
     {
         return this.name;

@@ -2,6 +2,8 @@ import { Injectable } from '@angular/core';
 import { ShopElements } from '../enums/shop-elements.enum';
 import { ShoppingListService } from './shopping-list.service';
 import { Product } from '../classes/product';
+import { ShopNavigationComponent } from '../components/shop-navigation/shop-navigation.component';
+import { ButtonManagementService } from './button-management.service';
 
 @Injectable({
   providedIn: 'root'
@@ -37,7 +39,7 @@ export class NavigationService
 
   private currentProduct: Product;
 
-  constructor(private listService: ShoppingListService)
+  constructor(private listService: ShoppingListService, private buttonService: ButtonManagementService)
   {
     this.currentPosition = this.findCoordinates(this.e);
     
@@ -49,6 +51,8 @@ export class NavigationService
   {
     this.currentProduct = this.listService.getNormalProductList()[0];
     let productName: string = this.currentProduct.getName();
+
+    this.buttonService.productNavigationEnded = this.isEndOfList();
   }
 
   public continueNavigation(): void
@@ -60,6 +64,22 @@ export class NavigationService
     {
       this.currentProduct = productList[currentListNumber];
     }
+
+    this.buttonService.productNavigationEnded = this.isEndOfList();
+  }
+  
+  private isEndOfList(): boolean
+  {
+    return this.currentProduct.getListNumber() + 2 == this.listService.getNormalProductList().length;
+  }
+
+  public resetApp(): void
+  {
+    Product.resetListCounter();
+
+    this.listService.setUpNewList();
+
+    this.buttonService.navigationButtonDisabled = true;
   }
 
   private findCoordinates(field: ShopElements): [number, number]

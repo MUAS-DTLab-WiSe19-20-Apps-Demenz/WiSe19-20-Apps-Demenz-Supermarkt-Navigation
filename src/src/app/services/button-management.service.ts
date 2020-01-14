@@ -7,5 +7,7 @@ export class ButtonManagementService
 {
   public navigationButtonDisabled: boolean = true;
 
+  public productNavigationEnded: boolean = false;
+
   constructor() { }
 }

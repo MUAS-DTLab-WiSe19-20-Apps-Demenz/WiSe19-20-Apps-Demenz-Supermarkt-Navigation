@@ -8,24 +8,14 @@ import { ShopElements } from '../enums/shop-elements.enum';
 })
 export class ShoppingListService
 {
-  private productList: BehaviorSubject<Product[]> = new BehaviorSubject<Product[]>([]);
+  private productList: BehaviorSubject<Product[]>;
   private totalPrice: number;
 
   private productOptions: string[];
 
   constructor()
   {
-    let product_1 = new Product("", -1, this);
-    let product_2 = new Product("", -1, this);
-
-    this.productOptions = this.getProductNames();
-
-    product_1.setFieldIsDisabled(false);
-
-    this.addProductToList(product_1);
-    this.addProductToList(product_2);
-
-    this.totalPrice = -1;
+    this.setUpNewList();
   }
 
   public getProductList(): Observable<Product[]>
@@ -147,6 +137,23 @@ export class ShoppingListService
     }
 
     return result;
+  }
+
+  public setUpNewList(): void
+  {
+    this.productList = new BehaviorSubject<Product[]>([]);;
+
+    let product_1 = new Product("", -1, this);
+    let product_2 = new Product("", -1, this);
+
+    this.productOptions = this.getProductNames();
+
+    product_1.setFieldIsDisabled(false);
+
+    this.addProductToList(product_1);
+    this.addProductToList(product_2);
+
+    this.totalPrice = -1;
   }
 
   public getTotalPrice(): number

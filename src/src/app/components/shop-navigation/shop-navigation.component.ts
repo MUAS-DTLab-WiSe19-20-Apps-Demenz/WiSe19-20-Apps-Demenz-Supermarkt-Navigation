@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { NavigationService } from 'src/app/services/navigation.service';
+import { ButtonManagementService } from 'src/app/services/button-management.service';
 
 @Component({
   selector: 'app-shop-navigation',
@@ -9,12 +10,17 @@ import { NavigationService } from 'src/app/services/navigation.service';
 })
 export class ShopNavigationComponent implements OnInit {
 
-  constructor(private router: Router, private navigationService: NavigationService) { }
+  constructor(private router: Router, private navigationService: NavigationService, private buttonService: ButtonManagementService) { }
 
-  private continueNavigation()
+  public continueNavigation()
   {
     this.navigationService.continueNavigation();
     this.router.navigate(["shopNavigation"]);
+  }
+
+  private toCheckoutPage()
+  {
+    this.router.navigate(["checkoutNavigation"]);
   }
 
   private returnToStartPage()
@@ -24,5 +30,4 @@ export class ShopNavigationComponent implements OnInit {
 
   ngOnInit() {
   }
-
 }

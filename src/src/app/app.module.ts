@@ -10,7 +10,7 @@ import { MatFormFieldModule } from "@angular/material/form-field";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from "@angular/material/card";
 import { MatAutocompleteModule } from "@angular/material/autocomplete";
-import {MatSelectModule} from '@angular/material/';
+import { MatSelectModule } from '@angular/material/';
 
 import { AppComponent } from './app.component';
 import { StartPageComponent } from './components/start-page/start-page.component';
@@ -20,14 +20,16 @@ import { AngeboteComponent } from './components/angebote/angebote.component';
 import { SortimentsComponent } from './components/sortiments/sortiments.component';
 import { ProductComponent } from './components/product/product.component';
 import { ShopNavigationComponent } from './components/shop-navigation/shop-navigation.component';
+import { ShopNavigationEndComponent } from './components/shop-navigation-end/shop-navigation-end.component';
 
 const appRoutes: Routes = [
-  { path: 'Navigation', component: NavigationComponent},
-  { path: 'shoppingList', component: ShoppingListComponent},
+  { path: 'Navigation', component: NavigationComponent },
+  { path: 'shoppingList', component: ShoppingListComponent },
   { path: '', component: StartPageComponent }, // Erste bzw. default-Seite
-  { path: 'Angebote', component: AngeboteComponent},
-  { path: 'Sortiments', component: SortimentsComponent},  
-  { path: 'shopNavigation', component: ShopNavigationComponent}
+  { path: 'Angebote', component: AngeboteComponent },
+  { path: 'Sortiments', component: SortimentsComponent },  
+  { path: 'shopNavigation', component: ShopNavigationComponent },
+  { path: 'checkoutNavigation', component: ShopNavigationEndComponent }
 ];
 
 @NgModule({
@@ -39,7 +41,8 @@ const appRoutes: Routes = [
     AngeboteComponent,
     SortimentsComponent,
     ProductComponent,
-    ShopNavigationComponent
+    ShopNavigationComponent,
+    ShopNavigationEndComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes,
