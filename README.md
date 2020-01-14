@@ -70,13 +70,11 @@ Alzheimererkrankten zu vereinfachen.
 
 **Dokumente**
 
-|Links        |Beschreibung                            |
+|Links(Download) |Beschreibung                            |
 |-------------|:---------------------------------------|
-|PressRelease |PressRelease SuperNavi Stand:           |
-|FAQ          | Fragen und Antworten unseres SuperNavi |
-|Storyboard   | Grundkonzept und Wireframes            |
-|UserStorys   |UserStorys generiert Basis des SuperNavi|
-
+|[PressRelease](https://gitlab.lrz.de/swe1ws20192020/g8/raw/master/documents/Pressrelease.docx?inline=false) |PressRelease SuperNavi Stand:           |
+|[FAQ](https://gitlab.lrz.de/swe1ws20192020/g8/raw/master/documents/FAQ%20G8%2007.11.2019.pdf?inline=false)         | Fragen und Antworten unseres SuperNavi |
+|[Storyboard & Userstorys](https://gitlab.lrz.de/swe1ws20192020/g8/raw/master/documents/Wireframes%20und%20Userstorys%20(1).pdf?inline=false)  | Wireframes und UserStorys. Bilden Basis für das SuperNavi           |
 -----
 
 
