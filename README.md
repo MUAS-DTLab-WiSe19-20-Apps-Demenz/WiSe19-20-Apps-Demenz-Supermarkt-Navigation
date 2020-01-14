@@ -66,14 +66,11 @@ der Gesamtpreis der Einkaufsliste wird berechnet.Damit der Einkauf begonnen werd
 <br>
 <br>
 <br>
-<br>
-<br>
-
 
 
 
 <img align="right" src="/src/src/assets/src_src_assets_EKLfertig.png">
-
+<br>
 
 So wird die Navigation startbar und der Kunde kann schließlich, durch eine Textausgabe, nacheinander zu 
 den ausgewählten Produkten geführt werden. Hierbei wird der kürzeste Weg von Produkt zu Produkt gewählt, um dem Alzheimer Patienten Zeit und Kraft zu sparen.
