@@ -46,7 +46,7 @@ Schließlich soll die Anwendung den kürzesten Weg durch den Supermarkt navigier
 Im Allgemeinen wurde auf eine schlichte und einfache Gestaltung des SuperNavi geachtet, damit jeder 
 Alzheimer Patient ohne jegliche Probleme die Anwendung bedienen kann.
 
-<img align="right" src="/src/src/assets/Angebote.png">
+<img align="right" src="/src/src/assets/EKLfertig.png">
 <br>
 <br>
 <br>
@@ -65,7 +65,6 @@ Preisnachlass erstellt, um einen übersichtlicheren Überblick der Angebote zu v
 <br>
 
 
-<img align="left" src="/src/src/assets/EKLfertig.png">
 
 
 Dabei wird nach jeder Auswahl eine weitere Auswahlmöglichkeit ergänzt, sodass unnötige leere Zeilen 
