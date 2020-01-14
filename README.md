@@ -44,6 +44,7 @@ Schließlich soll die Anwendung den kürzesten Weg durch den Supermarkt navigier
 ---
 
 **Beschreibung der Lösung**
+
 <img align="right" src="/src/src/assets/EKLfertig.png">
 Im Allgemeinen wurde auf eine schlichte und einfache Gestaltung des SuperNavi geachtet, damit jeder 
 Alzheimer Patient ohne jegliche Probleme die Anwendung bedienen kann.
