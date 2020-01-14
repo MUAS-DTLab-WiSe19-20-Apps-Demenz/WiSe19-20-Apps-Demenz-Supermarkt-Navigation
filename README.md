@@ -51,8 +51,6 @@ Schließlich soll die Anwendung den kürzesten Weg durch den Supermarkt navigier
 Im Allgemeinen wurde auf eine schlichte und einfache Gestaltung des SuperNavi geachtet, damit jeder 
 Alzheimer Patient ohne jegliche Probleme die Anwendung bedienen kann.<img align="right" src="/src/src/assets/Einkaufsliste2.0.png">
 
-![Einkaufsliste](/src/src/assets/Einkaufsliste2.0.png "Einkaufsliste")
-
 
 
 Zunächst wählt der Kunde seine gewünschten Produkte aus der Auswahl- oder Sortimentenliste aus und  
