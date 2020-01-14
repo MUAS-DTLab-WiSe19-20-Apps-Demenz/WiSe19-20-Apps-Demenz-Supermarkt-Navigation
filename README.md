@@ -23,6 +23,9 @@ die Einkaufskosten der eingegebenen Produkte aus. Auch auf Angebote der Märkte
 soll zugegriffen werden können: Dafür möchten wir eine "Angebote"-Funktion 
 implementieren, die die aktuellen Rabatte der Märkte auflistet und zur Liste
 hinzufügen soll.
+
+----
+
 **Problembeschreibung**
 
 Probleme denen wir uns stellen mussten waren natürlich das offensichtliche:
