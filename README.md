@@ -9,7 +9,6 @@ in den Sinn, den Einkaufsalltag dieser Menschen simpler zu gestalten.
 
 Die Idee war eine App, welche die Einkaufsliste organisieren kann und den
 Besuch des Marktes so einfach und schnell wie möglich gestalten soll.
-
 Dabei wollen wir den Problemen entgegentreten, womit die Alzheimererkrankten täglich
 zu tun haben und Ihnen den Einkauf leicher gestalten können. 
 
@@ -47,7 +46,7 @@ Schließlich soll die Anwendung den kürzesten Weg durch den Supermarkt navigier
 Im Allgemeinen wurde auf eine schlichte und einfache Gestaltung des SuperNavi geachtet, damit jeder 
 Alzheimer Patient ohne jegliche Probleme die Anwendung bedienen kann.
 
-![Einkaufsliste](/src/src/assets/Einkaufsliste2.0.png "Einkaufsliste")
+<img align="right" src="/src/src/assets/Angebote.png">
 
 Zunächst wählt der Kunde seine gewünschten Produkte aus der Auswahl- oder Sortimentenliste aus und  
 fügt diese in die Einkaufsliste ein. Zusätzlich wurde eine separate Liste von Produkten mit 
@@ -55,6 +54,9 @@ Preisnachlass erstellt, um einen übersichtlicheren Überblick der Angebote zu v
 Dabei wird nach jeder Auswahl eine weitere Auswahlmöglichkeit ergänzt, sodass unnötige leere Zeilen 
 vermieden werden. Die einzelnen Preise der in den Warenkorb gelegten Produkte werden angezeigt und 
 der Gesamtpreis der Einkaufsliste wird berechnet.
+<img align="right" src="/src/src/assets/EKLfertig.png">
+
+
 Damit der Einkauf begonnen werden kann, muss der Nutzer den Button „Ok (Bestätigen)“ tätigen. So 
 wird die Navigation startbar und der Kunde kann schließlich, durch eine Textausgabe, nacheinander zu 
 den ausgewählten Produkten geführt werden. Hierbei wird der kürzeste Weg von Produkt zu Produkt gewählt, um dem Alzheimer Patienten Zeit und Kraft zu sparen.
