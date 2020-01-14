@@ -79,6 +79,7 @@ der Gesamtpreis der Einkaufsliste wird berechnet.Damit der Einkauf begonnen werd
 So wird die Navigation startbar und der Kunde kann schließlich, durch eine Textausgabe, nacheinander zu 
 den ausgewählten Produkten geführt werden. Hierbei wird der kürzeste Weg von Produkt zu Produkt gewählt, um dem Alzheimer Patienten Zeit und Kraft zu sparen.
 Abschließend wird der Nutzer zur Kasse geführt und die Navigation beendet. Mit Beenden der Navigation kehrt die App zur ihrer Startseite zurück und leert die Einkaufsliste.
+<br>
 
 ---
 
