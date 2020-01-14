@@ -31,6 +31,18 @@ Auch darf die Navigation nicht versehentlich gestartet werden, noch bevor eine
 Einkaufsliste erstellt worden ist.
 
 ---
+Durch das Hineinversetzen in die Lage der Alzheimer Patienten stellt sich heraus, dass sie sich auf 
+hilfreiche Anwendungen verlassen, in denen sie Listen für verschiedene Tätigkeiten, wie das 
+Einkaufen erstellen.  
+
+Mit Hilfe des SuperNavi soll der Alzheimer Patient mühelos eine intelligente Einkaufsliste erstellen 
+können. Um Überblick über die Finanzen zu schaffen, soll die Software im vornherein die 
+Einkaufskosten der eingegebenen Produkte ausrechnen. Auch auf Angebote der Märkte soll zugegriffen 
+werden können: Dafür wird eine "Angebote" Funktion implementiert, die die aktuellen Rabatte der 
+Märkte auflistet und zur Liste hinzufügen soll. 
+Schließlich soll die Anwendung den kürzesten Weg durch den Supermarkt navigieren.
+
+---
 
 Im Allgemeinen wurde auf eine schlichte und einfache Gestaltung des SuperNavi geachtet, damit jeder 
 Alzheimer Patient ohne jegliche Probleme die Anwendung bedienen kann.
