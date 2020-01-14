@@ -55,8 +55,7 @@ Alzheimererkrankten zu vereinfachen.
 |-------------|:---------------------------------------|
 |PressRelease |PressRelease SuperNavi Stand:           |
 |FAQ          | Fragen und Antworten unseres SuperNavi |
-|Storyboard   | Grundkonzept und Wireframes            |
-|UserStorys   |UserStorys generiert Basis des SuperNavi|
+|Storyboard & Userstorys  | Wireframes und UserStorys. Bilden Basis für das SuperNavi           |
 
 -----
 
