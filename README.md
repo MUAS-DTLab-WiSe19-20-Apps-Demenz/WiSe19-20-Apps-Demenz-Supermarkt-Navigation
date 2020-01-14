@@ -51,10 +51,25 @@ Alzheimer Patient ohne jegliche Probleme die Anwendung bedienen kann.
 Zunächst wählt der Kunde seine gewünschten Produkte aus der Auswahl- oder Sortimentenliste aus und  
 fügt diese in die Einkaufsliste ein. Zusätzlich wurde eine separate Liste von Produkten mit 
 Preisnachlass erstellt, um einen übersichtlicheren Überblick der Angebote zu verschaffen. 
+
+
+
+
+
+
+<img align="left" src="/src/src/assets/EKLfertig.png">
+
+
 Dabei wird nach jeder Auswahl eine weitere Auswahlmöglichkeit ergänzt, sodass unnötige leere Zeilen 
 vermieden werden. Die einzelnen Preise der in den Warenkorb gelegten Produkte werden angezeigt und 
 der Gesamtpreis der Einkaufsliste wird berechnet.
-<img align="right" src="/src/src/assets/EKLfertig.png">
+
+
+
+
+<img align="right" src="/src/src/assets/NAvStart.png">
+<img align="right" src="/src/src/assets/Navigation.png">
+<img align="right" src="/src/src/assets/NavFertig.png">
 
 
 Damit der Einkauf begonnen werden kann, muss der Nutzer den Button „Ok (Bestätigen)“ tätigen. So 
