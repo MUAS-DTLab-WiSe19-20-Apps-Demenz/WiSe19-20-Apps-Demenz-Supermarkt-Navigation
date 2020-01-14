@@ -58,15 +58,6 @@ fügt diese in die Einkaufsliste ein. Zusätzlich wurde eine separate Liste von 
 Preisnachlass erstellt, um einen übersichtlicheren Überblick der Angebote zu verschaffen. 
 
 
-
-<br>
-<br>
-<br>
-<br>
-
-
-
-
 Dabei wird nach jeder Auswahl eine weitere Auswahlmöglichkeit ergänzt, sodass unnötige leere Zeilen 
 vermieden werden. Die einzelnen Preise der in den Warenkorb gelegten Produkte werden angezeigt und 
 der Gesamtpreis der Einkaufsliste wird berechnet.
@@ -77,6 +68,9 @@ der Gesamtpreis der Einkaufsliste wird berechnet.
 <br>
 <br>
 <br>
+<br>
+<br>
+
 
 
 <img align="right" src="/src/src/assets/src_src_assets_EKLfertig.png">
