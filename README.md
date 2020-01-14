@@ -67,9 +67,7 @@ der Gesamtpreis der Einkaufsliste wird berechnet.
 
 
 
-<img align="right" src="/src/src/assets/NAvStart.png">
-<img align="right" src="/src/src/assets/Navigation.png">
-<img align="right" src="/src/src/assets/NavFertig.png">
+<img align="right" src="/src/src/assets/NAvStart.png"> <img align="right" src="/src/src/assets/Navigation.png"> <img align="right" src="/src/src/assets/NavFertig.png">
 
 
 Damit der Einkauf begonnen werden kann, muss der Nutzer den Button „Ok (Bestätigen)“ tätigen. So 
