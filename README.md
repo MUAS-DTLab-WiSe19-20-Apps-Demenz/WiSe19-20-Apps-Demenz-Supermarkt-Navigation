@@ -51,6 +51,7 @@ Alzheimer Patient ohne jegliche Probleme die Anwendung bedienen kann.
 <br>
 <br>
 <br>
+<br>
 
 
 Zunächst wählt der Kunde seine gewünschten Produkte aus der Auswahl- oder Sortimentenliste aus und  
@@ -66,7 +67,7 @@ der Gesamtpreis der Einkaufsliste wird berechnet.Damit der Einkauf begonnen werd
 <br>
 <br>
 <br>
-<br>
+
 
 
 <img align="right" src="/src/src/assets/src_src_assets_EKLfertig.png">
