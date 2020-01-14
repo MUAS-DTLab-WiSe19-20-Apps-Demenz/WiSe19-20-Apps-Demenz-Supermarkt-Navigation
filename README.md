@@ -1,23 +1,23 @@
 **Das Supermarkt-Navigationssystem**
 
-![SuperNavi Logo](/src/src/assets/SuperNavi.png "SuperNAvi")
+![SuperNavi Logo](/src/src/assets/SuperNavi.png "SuperNavi")
 
 
 
 Unser Team wollte das Leben Alzheimererkrankten vereinfachen. Dabei kam uns
 in den Sinn, den Einkaufsalltag dieser Menschen simpler zu gestalten.
 
+Die Idee war eine App, welche die Einkaufsliste organisieren kann und den
+Besuch des Marktes so einfach und schnell wie möglich gestalten soll.
+
+Dabei wollen wir den Problemen entgegentreten, womit die Alzheimererkrankten täglich
+zu tun haben und Ihnen den Einkauf leicher gestalten können. 
+
+
 ----
 
-Das **SuperNavi** soll eine intelligente Einkaufsliste erstellen können und 
-den daraufhin kürzesten Weg durch den Supermarkt navigieren. 
-Um Überblick über die Finanzen zu schaffen, rechnet die Software im vorhinein
-die Einkaufskosten der eingegebenen Produkte aus. Auch auf Angebote der Märkte
-soll zugegriffen werden können: Dafür haben wir eine "Angebote"Funktion 
-implementiert, die die aktuellen Rabatte der Märkte auflistet und zur Liste
-hinzufügen soll.
 
----
+**Problembeschreibung**
 
 Probleme denen wir uns stellen mussten war natürlich das offensichtliche:
 
@@ -31,6 +31,10 @@ Auch darf die Navigation nicht versehentlich gestartet werden, noch bevor eine
 Einkaufsliste erstellt worden ist.
 
 ---
+
+**Idee**
+
+
 Durch das Hineinversetzen in die Lage der Alzheimer Patienten stellt sich heraus, dass sie sich auf 
 hilfreiche Anwendungen verlassen, in denen sie Listen für verschiedene Tätigkeiten, wie das 
 Einkaufen erstellen.  
