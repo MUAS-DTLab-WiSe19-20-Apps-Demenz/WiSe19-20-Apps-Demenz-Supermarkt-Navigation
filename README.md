@@ -32,6 +32,25 @@ Einkaufsliste erstellt worden ist.
 
 ---
 
+Im Allgemeinen wurde auf eine schlichte und einfache Gestaltung des SuperNavi geachtet, damit jeder 
+Alzheimer Patient ohne jegliche Probleme die Anwendung bedienen kann.
+
+![Einkaufsliste](/src/src/assets/Einkaufsliste.png "Einkaufsliste")
+
+Zunächst wählt der Kunde seine gewünschten Produkte aus der Auswahl- oder Sortimentenliste aus und  
+fügt diese in die Einkaufsliste ein. Zusätzlich wurde eine separate Liste von Produkten mit 
+Preisnachlass erstellt, um einen übersichtlicheren Überblick der Angebote zu verschaffen. 
+Dabei wird nach jeder Auswahl eine weitere Auswahlmöglichkeit ergänzt, sodass unnötige leere Zeilen 
+vermieden werden.  Die einzelnen Preise der in den Warenkorb gelegten Produkte werden angezeigt und 
+der Gesamtpreis der Einkaufsliste wird errechnet.
+Damit der Einkauf begonnen werden kann, muss der Nutzer den Button „Ok (Bestätigen)“ tätigen. So 
+wird die Navigation gestartet und der Kunde kann schließlich durch eine Textausgabe nacheinander zu 
+den ausgewählten Produkten geführt werden. Hierbei wird der kürzeste Weg gewählt, um dem Alzheimer 
+Patienten Zeit und Kraft zu sparen.
+Abschließend wird der Nutzer zur Kasse geführt und die Navigation beendet.
+
+---
+
 **Zusammenfassung**
 
 Das SuperNavi weiß die Probleme, welche wir uns entgegengestellt sahen, zu lösen.
