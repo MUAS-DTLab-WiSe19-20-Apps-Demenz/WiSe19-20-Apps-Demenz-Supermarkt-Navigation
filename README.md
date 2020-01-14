@@ -60,7 +60,7 @@ Preisnachlass erstellt, um einen übersichtlicheren Überblick der Angebote zu v
 
 Dabei wird nach jeder Auswahl eine weitere Auswahlmöglichkeit ergänzt, sodass unnötige leere Zeilen 
 vermieden werden. Die einzelnen Preise der in den Warenkorb gelegten Produkte werden angezeigt und 
-der Gesamtpreis der Einkaufsliste wird berechnet.
+der Gesamtpreis der Einkaufsliste wird berechnet.Damit der Einkauf begonnen werden kann, muss der Nutzer den Button „Ok (Bestätigen)“ tätigen. 
 
 <br>
 <br>
@@ -76,8 +76,7 @@ der Gesamtpreis der Einkaufsliste wird berechnet.
 <img align="right" src="/src/src/assets/src_src_assets_EKLfertig.png">
 
 
-Damit der Einkauf begonnen werden kann, muss der Nutzer den Button „Ok (Bestätigen)“ tätigen. So 
-wird die Navigation startbar und der Kunde kann schließlich, durch eine Textausgabe, nacheinander zu 
+So wird die Navigation startbar und der Kunde kann schließlich, durch eine Textausgabe, nacheinander zu 
 den ausgewählten Produkten geführt werden. Hierbei wird der kürzeste Weg von Produkt zu Produkt gewählt, um dem Alzheimer Patienten Zeit und Kraft zu sparen.
 Abschließend wird der Nutzer zur Kasse geführt und die Navigation beendet. Mit Beenden der Navigation kehrt die App zur ihrer Startseite zurück und leert die Einkaufsliste.
 
