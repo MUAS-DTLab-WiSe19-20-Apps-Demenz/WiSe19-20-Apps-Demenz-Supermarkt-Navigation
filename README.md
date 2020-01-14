@@ -5,7 +5,7 @@
 
 
 Unser Team wollte das Leben Alzheimererkrankten vereinfachen. Dabei kam uns
-in den Sinn, den Einkaufsaltag dieser Menschen simpler zu gestalten.
+in den Sinn, den Einkaufsalltag dieser Menschen simpler zu gestalten.
 
 ----
 
@@ -27,3 +27,43 @@ nicht außer acht lassen, die Oberfläche der Software zu kompliziert zu gestall
 Einfache Steuerung und Navigierung durch die Menüs und trozdem das Ziel verfolgen
 das Einkaufsleben zu vereinfachen.
 Dadurch auch für die Navigation: so kurz wie möglich, an jedes Produkt gelotst werden.
+Auch darf die Navigation nicht versehentlich gestartet werden, noch bevor eine 
+Einkaufsliste erstellt worden ist.
+
+---
+
+**Zusammenfassung**
+
+Das SuperNavi weiß die Probleme, welche wir uns entgegengestellt sahen, zu lösen.
+
+
+Durch die einfache Handhabung der Einkaufsliste, aber auch 
+die Möglichkeiten sich durch die Sortimente durchzuklicken und so immer den 
+Überblick über seinen Einkauf zu behalten sprechen hier für.
+Auch dank eingegliederten Angebotefunktion der Märkte und die Gesamtpreiskalkulation
+kann der Nutzer einen guten Überblick über seine Einkaufsfinanzen behalten.
+Einfache und schnelle Navigation durch die Regale der Märkte.
+
+Alles in allem bietet unser SuperNavi alles um den Einkaufsalltag der
+Alzheimererkrankten zu vereinfachen.
+
+-----
+
+**Dokumente**
+
+|Links        |Beschreibung                  |
+|-------------|:-----------------------------|
+|PressRelease |PressRelease SuperNavi Stand: |
+|-------------|------------------------------|
+|FAQ          | Fragen und Antworten unseres SuperNavi |
+|-------------|------------------------------|
+|Storyboard| Grundkonzept und Wireframes     |
+|-------------|-------------|
+|UserStorys| UserStorys generiert Basis des SuperNavi|
+{: .custom-class #custom-id}
+
+-----
+
+
+TEAM:
+Andreas Kienle, Robert Rudolf, Fatma Oezar, Yussuf Muktar
