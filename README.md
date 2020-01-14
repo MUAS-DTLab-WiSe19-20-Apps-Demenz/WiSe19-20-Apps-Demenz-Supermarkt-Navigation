@@ -54,11 +54,11 @@ Alzheimererkrankten zu vereinfachen.
 |Links        |Beschreibung                  |
 |-------------|:-----------------------------|
 |PressRelease |PressRelease SuperNavi Stand: |
-|-------------|------------------------------|
+|-------------+------------------------------|
 |FAQ          | Fragen und Antworten unseres SuperNavi |
-|-------------|------------------------------|
+|-------------+------------------------------|
 |Storyboard| Grundkonzept und Wireframes     |
-|-------------|-------------|
+|-------------+-------------|
 |UserStorys| UserStorys generiert Basis des SuperNavi|
 {: .custom-class #custom-id}
 
