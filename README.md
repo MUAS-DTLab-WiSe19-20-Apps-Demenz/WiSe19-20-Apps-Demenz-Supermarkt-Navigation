@@ -68,8 +68,7 @@ der Gesamtpreis der Einkaufsliste wird berechnet.Damit der Einkauf begonnen werd
 <br>
 <br>
 <br>
-<br>
-<br>
+
 
 
 
