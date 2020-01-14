@@ -35,7 +35,7 @@ Einkaufsliste erstellt worden ist.
 Im Allgemeinen wurde auf eine schlichte und einfache Gestaltung des SuperNavi geachtet, damit jeder 
 Alzheimer Patient ohne jegliche Probleme die Anwendung bedienen kann.
 
-![Einkaufsliste](/src/src/assets/Einkaufsliste.png "Einkaufsliste")
+![Einkaufsliste](/src/src/assets/Einkaufsliste2.0.png "Einkaufsliste")
 
 Zunächst wählt der Kunde seine gewünschten Produkte aus der Auswahl- oder Sortimentenliste aus und  
 fügt diese in die Einkaufsliste ein. Zusätzlich wurde eine separate Liste von Produkten mit 
