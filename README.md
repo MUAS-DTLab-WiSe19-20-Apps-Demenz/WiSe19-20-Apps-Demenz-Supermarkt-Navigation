@@ -16,16 +16,12 @@ zu tun haben und Ihnen den Einkauf leicher gestalten können.
 
 **Problembeschreibung**
 
-Probleme denen wir uns stellen mussten waren natürlich das offensichtliche:
+Manche Alzheimer Patienten, aufgrund ihres beeinträchtigten Gedächtnises, haben das Problem, dass sie beim Einkaufen vergessen, welche Produkte sie einkaufen wollten.
+Viele erstellen sich dafür kleine Notizzettel, auf denen sie ihre gewünschten Produkte aufschreiben. Jedoch können auch diese Zettel vergessen werden oder verloren gehen.
+Außerdem kann es dazu kommen, dass Alzheimererkrankte während des Einkaufs mit der Situation überfordert werden und manchmal nicht wissen, wie sie zu ihren
+Einkaufswünschen oder der Kasse gelangen.
 
-Das beeinträchtigte Gedächnis der Alzheimererkrankten. Wir müssen das Problem
-angehen, das der vorgesehene Einkauf auch komplett stattfinden wird und dürfen 
-nicht außer acht lassen, die Oberfläche der Software übersichtlich zu gestalten.
-Also müssen wir eine einfache Steuerung und Navigierung durch die Menüs ermöglichen und trotzdem das Ziel verfolgen, das Einkaufsleben zu vereinfachen.
-Des Weiteren galt für die Navigation: so kurz wie möglich, zu jedem Produkt lotsen.
-Zudem darf die Navigation nicht versehentlich gestartet werden, noch bevor eine Einkaufsliste erstellt worden ist.
-
----
+----
 
 **Idee**
 
@@ -106,13 +102,13 @@ Alzheimererkrankten zu vereinfachen.
 
 |Links (Download) |Beschreibung                            |
 |-------------|:---------------------------------------|
-|[Press Release](https://gitlab.lrz.de/swe1ws20192020/g8/raw/master/documents/Pressrelease.docx?inline=false) |Press Release SuperNavi Stand.           |
-|[FAQ](https://gitlab.lrz.de/swe1ws20192020/g8/raw/master/documents/FAQ%20G8%2007.11.2019.pdf?inline=false)         | Häufig gestellte Fragen mit Antworten zum SuperNavi. |
-|[Storyboard & Userstorys](https://gitlab.lrz.de/swe1ws20192020/g8/raw/master/documents/Wireframes%20und%20Userstorys%20(1).pdf?inline=false)  | Wireframes und UserStorys. Sie bilden die Basis für das SuperNavi.           |
+|[Press Release](https://gitlab.lrz.de/swe1ws20192020/g8/raw/master/documents/Pressrelease.docx?inline=false) |Press Release           |
+|[FAQ](https://gitlab.lrz.de/swe1ws20192020/g8/raw/master/documents/FAQ%20G8%2007.11.2019.pdf?inline=false)         | Häufig gestellte Fragen mit Antworten zum SuperNavi |
+|[Storyboard & Userstorys](https://gitlab.lrz.de/swe1ws20192020/g8/raw/master/documents/Wireframes%20und%20Userstorys%20(1).pdf?inline=false)  | Wireframes und UserStorys (Sie bilden die Basis für das SuperNavi)           |
 -----
 
 
-TEAM:
+**TEAM:**
 
 Robert Rudolf   -       **Product Owner**
 
