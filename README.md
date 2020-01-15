@@ -16,7 +16,7 @@ zu tun haben und Ihnen den Einkauf leicher gestalten können.
 
 **Problembeschreibung**
 
-Manche Alzheimer Patienten, aufgrund ihres beeinträchtigten Gedächtnises, haben das Problem, dass sie beim Einkaufen vergessen, welche Produkte sie einkaufen wollten.
+Manche Alzheimerpatienten, aufgrund ihres beeinträchtigten Gedächtnises, haben das Problem, dass sie beim Einkaufen vergessen, welche Produkte sie einkaufen wollten.
 Viele erstellen sich dafür kleine Notizzettel, auf denen sie ihre gewünschten Produkte aufschreiben. Jedoch können auch diese Zettel vergessen werden oder verloren gehen.
 Außerdem kann es dazu kommen, dass Alzheimererkrankte während des Einkaufs mit der Situation überfordert werden und manchmal nicht wissen, wie sie zu ihren
 Einkaufswünschen oder der Kasse gelangen.
