@@ -10,8 +10,8 @@
 <mat-form-field class="demo-full-width">
   <mat-label>Wählen sie einen Markt aus</mat-label>
   <select matNativeControl ="nativeSelectFormControl" [errorStateMatcher]="matcher">
-    <option value=""></option>
-    <option value="valid" selected>ALDI</option>
+    <option value=""selected></option>
+    <option value="valid" >ALDI</option>
     <option value="invalid">LIDL</option>
   </select>
   <mat-error *ngIf="nativeSelectFormControl.hasError('required')">You must make a selection</mat-error>
